@@ -1,0 +1,98 @@
+/* This code allows the box to be the same size and the padding is affected to the inside space of a box */
+*{
+    box-sizing: border-box;
+}
+
+/* To avoid the float to the left problem and is going to clear the floats after column */
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+p {
+    font-family: Arial;
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial;
+}
+
+/* This code tells the device that after 600px or less, the columns must be transform into one column and not continue as rows */
+@media screen and (max-width: 600px){
+    .column.side, column.main{
+        width: 100%;
+    }
+}
+
+/* Style that affects the HEADER ROW */
+.header-row{
+    background-color: #333;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+/* style for Logo */
+.header a.logo{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+header a:hover{
+    opacity: 80%;
+}
+
+
+
+/* Create 3 columns and they float next to each other */
+.column{
+    float: left;
+    padding: 20px;
+}
+
+/* Left and Right sidebar */
+.column.side{
+    width: 25%;
+    background-color: #c3c3c3;
+}
+
+/* main content area */
+.column.main{
+    width: 50%;
+}
+
+.column.copyright{
+    width: 100%;
+    background-color:black;
+    color: white;
+}
+
+/* style for the footer area */
+.footer{
+    width: 33.33%;
+    background: #d3d3d3;
+    border-left: 2px solid white;
+}
+
+.left{
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    float: left;
+}
+
+.right{
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    float: right;
+}
+
+a.copyright{
+    color:white;
+}
+a:hover{
+    color: #d3d3d3;
+    text-decoration: none;
+}
