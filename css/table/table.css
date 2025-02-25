@@ -1,0 +1,85 @@
+
+/* CSS for HOMEpage TABLE */
+table.table1 th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+
+table.table1 th{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 2px 10px 2px;
+    font-size: 15px;
+}
+
+table.table1 tr:nth-child(even){
+    background-color:rgba(150, 212, 212, 0.4)
+}
+table.table1 tr:hover{
+    background-color: gray;
+    color: white;
+}
+
+div.table1{
+    overflow-x: auto;
+}
+
+/* CSS for HOMEWORK TABLE */
+table.table2 td{
+    border: 1px dotted black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table.table2 th{
+    border: 1px dotted white;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+table.table2 tr:nth-child(even){
+    background-color: #D3D3D3;
+}
+
+table.table2 tr:hover{
+    background-color: #778899;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+div.table2{
+    overflow-x:auto;
+}
+
+/* Beginning of the 3 columns layout with images */
+
+div.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 31%;
+}
+/*
+tr:nth-child(odd){
+    background-color:rgba(203, 212, 212, 0.4)
+}
+table{
+    border-spacing: 30px;
+    background-color: rgb(206,206,206);
+}
+th, td{
+    background-color: white;
+}
+th{
+    text-align: left;
+}
+*/
