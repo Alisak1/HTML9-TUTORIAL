@@ -68,6 +68,7 @@ div.gallery{
     float: left;
     width: 31%;
 }
+
 /*
 tr:nth-child(odd){
     background-color:rgba(203, 212, 212, 0.4)

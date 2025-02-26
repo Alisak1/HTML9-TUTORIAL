@@ -16,6 +16,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 /* This code tells the device that after 600px or less, the columns must be transform into one column and not continue as rows */
@@ -82,18 +83,45 @@ header a:hover{
     border-left: 2px solid white;
 }
 
-.left{
+column.left{
     width: 50%;
     padding: 10px;
-    font-size: 18px;
+    font-size: 14px;
     float: left;
 }
 
-.right{
+column.right{
     width: 50%;
     padding: 10px;
-    font-size: 18px;
+    font-size: 14px;
     float: right;
+}
+
+/* 3 column layout style - image opacity - fancy button */
+
+a.image:hover{
+    opacity: 0.7;
+}
+a.button{
+    text-decoration: none;
+    background-color:red;
+    width: 200px;
+    padding: 5px 20px;
+    border: 3px solid black;
+    color: white;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+a.button:hover{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition-duration: 0,5s;
+    box-shadow: 2px 3px 10px; rgba(0, 0, 0, 0.7);
+    background-color: black;
+    border: 3px solid red;
 }
 
 a.copyright{
@@ -103,3 +131,57 @@ a:hover{
     color: #d3d3d3;
     text-decoration: none;
 }
+
+/* style for 2 column with images & buttons */
+
+div.gallery-2{
+    margin: 20px 10px 20px 0px;
+    float: left;
+    width: 48%;
+}
+
+a.button-2{
+    text-decoration: none;
+    background-color: #4A5E86;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #333;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+a.button-2:hover{
+    background-color: #68C5DD;
+    color: black;
+    transition-duration: 0.6s;
+
+}
+
+/* style for 2 column HOMEWORK with images & buttons & external link */
+
+a.gallery-3:hover{
+    opacity: 0.7;
+}
+
+div.gallery-3{
+    margin: 20px 10px 20px 0px;
+    float: left;
+    width: 48%;
+}
+
+a.button-3{
+    text-decoration: none;
+    background-color: #ca65a2;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #333;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+a.button-3:hover{
+    background-color: #e49651;
+    color: black;
+    transition-duration: 0.6s;
+}
+
